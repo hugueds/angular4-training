@@ -1,3 +1,28 @@
-<h1>
+<h1 fundoAmarelo>
   {{title}}
 </h1>
+<h2 highLight > HIGH LIGHT!</h2>
+<h2 highLight2 [defaultColor]="'green'" [hLColor]="'red'" > HIGH LIGHT!</h2>
+
+
+<h4> {{ phrase | camelCase }}</h4>
+
+{{ valorAsync | async }}
+
+<input type="text" [(ngModel)]='filter'/>
+
+
+
+
+
+
+
+<button (click)='cons()'>aaaaaaa</button>
+
+<ul *ngFor='let t of tests'>
+  <li > {{ t }} </li>
+</ul>
+
+<ul>
+  <li *ngFor='let t of testFilter()'> {{ t }} </li>
+</ul>
